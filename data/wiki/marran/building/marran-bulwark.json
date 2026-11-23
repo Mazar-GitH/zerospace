@@ -7,7 +7,8 @@
   "hotkey": "T",
   "order": 30,
   "cost": {
-    "hexite": 125
+    "hexite": 100,
+    "flux": 25
   },
   "buildTime": 50,
   "hp": 1000,

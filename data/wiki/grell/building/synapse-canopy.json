@@ -21,10 +21,7 @@
     "grell/upgrade/accelerated-mitosis",
     "grell/upgrade/anchoring-tendrils",
     "grell/upgrade/camouflage",
-    "grell/upgrade/cardiovascular-boost",
-    "grell/upgrade/coagulated-membrane",
     "grell/upgrade/corroding-expulsion",
-    "grell/upgrade/corrosive-secretion",
     "grell/upgrade/cytokinin-surge",
     "grell/upgrade/dissolving-venom",
     "grell/upgrade/elder-carapace",
@@ -33,8 +30,9 @@
     "grell/upgrade/fluxblood-surge",
     "grell/upgrade/hemal-vents",
     "grell/upgrade/koru-neuropaths",
+    "grell/upgrade/myogenic-tarsals",
     "grell/upgrade/pouncing-reflex",
-    "grell/upgrade/thermal-carapace"
+    "grell/upgrade/take-flight"
   ],
   "portrait": "TGUI_icon_grell_building_research_special_portrait02",
   "asset": "Archetypes_ResearchItems/Buildings/RI_Building_Grell_SpecialResearch_2"

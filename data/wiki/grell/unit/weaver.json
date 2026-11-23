@@ -8,7 +8,7 @@
   "order": 20,
   "cost": {
     "hexite": 100,
-    "flux": 200
+    "flux": 150
   },
   "count": 1,
   "buildTime": 40,
@@ -79,7 +79,7 @@
     "grell/upgrade/koru-neuropaths"
   ],
   "topbarEnergyCosts": {
-    "grell/topbar/infusion": 17.5
+    "grell/topbar/infusion": 14.375
   },
   "portrait": "TGUI_portrait_unit_grell_weaver07",
   "asset": "Archetypes_ResearchItems/Troops/RI_Troop_GrellWeaver"

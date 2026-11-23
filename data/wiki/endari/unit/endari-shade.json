@@ -13,24 +13,24 @@
   "supply": 2,
   "hp": 225,
   "armorType": "light",
-  "speed": 700,
+  "speed": 725,
   "vision": 1600,
   "size": 94,
   "transportSlots": 3,
   "weapons": [
     {
       "name": "Unmaking Blade",
-      "damage": 20,
+      "damage": 22,
       "cooldown": 0.9,
       "burst": 1,
       "burstCooldown": 0.9,
-      "range": 160,
+      "range": 100,
       "excludedTargets": [
         "Air"
       ],
       "warmup": 0.11,
       "melee": true,
-      "dps": 22.2222
+      "dps": 24.4444
     }
   ],
   "producedBy": [

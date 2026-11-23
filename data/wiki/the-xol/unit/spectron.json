@@ -41,7 +41,7 @@
   "abilities": [
     {
       "name": "Disassimilate",
-      "description": "Quickly moves the Spectron to a target point, making it invulnerable while moving.",
+      "description": "Quickly moves to a target point, becoming invulnerable while moving.",
       "hotkey": "D",
       "cooldown": 12,
       "range": 1500

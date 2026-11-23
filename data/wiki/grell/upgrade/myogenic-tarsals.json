@@ -1,9 +1,13 @@
 {
-  "id": "grell/upgrade/cardiovascular-boost",
+  "id": "grell/upgrade/myogenic-tarsals",
   "kind": "upgrade",
   "faction": "grell",
-  "name": "Cardiovascular Boost",
-  "description": "+200 Move Speed",
+  "name": "Myogenic Tarsals",
+  "description": "+{Speed} movement speed.\n+{Armor} armor.",
+  "values": {
+    "Speed": 175,
+    "Armor": 1
+  },
   "order": 1,
   "cost": {
     "flux": 100
@@ -17,5 +21,5 @@
     "grell/unit/harbinger"
   ],
   "portrait": "TGUI_icon_skill_movement_speed",
-  "asset": "Archetypes_ResearchItems/Legion/RI_Harbinger_T2Speed"
+  "asset": "Archetypes_ResearchItems/Legion/RI_Harbinger_Speed_and_Armor"
 }

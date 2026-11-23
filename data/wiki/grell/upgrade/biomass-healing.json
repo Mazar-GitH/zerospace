@@ -5,7 +5,7 @@
   "name": "Biomass Healing",
   "description": "Biomass heals units for {Health} health per second.",
   "values": {
-    "Health": 1
+    "Health": 2
   },
   "order": 10,
   "researchTime": 0,

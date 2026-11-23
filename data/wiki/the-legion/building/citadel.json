@@ -37,7 +37,8 @@
     "the-legion/upgrade/maul",
     "the-legion/upgrade/performance-enhancers",
     "the-legion/upgrade/performance-enhancers-steelsworn",
-    "the-legion/upgrade/saw"
+    "the-legion/upgrade/saw",
+    "the-legion/upgrade/siege-tempest"
   ],
   "portrait": "TGUI_icon_empire_citadel",
   "asset": "Archetypes_ResearchItems/Buildings/RI_Leg_Building_Citadel"

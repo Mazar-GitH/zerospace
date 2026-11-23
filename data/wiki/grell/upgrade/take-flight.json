@@ -1,0 +1,41 @@
+{
+  "id": "grell/upgrade/take-flight",
+  "kind": "upgrade",
+  "faction": "grell",
+  "name": "Take Flight",
+  "description": "Lashers take flight for {Duration} seconds, gaining +{Speed} Movement Speed. Cannot attack while flying.",
+  "values": {
+    "Duration": 3,
+    "Speed": 250
+  },
+  "order": 3,
+  "cost": {
+    "flux": 150
+  },
+  "cooldown": 30,
+  "range": 1600,
+  "abilities": [
+    {
+      "name": "Take Flight",
+      "description": "Lashers take flight for {Duration} seconds, gaining +{Speed} Movement Speed. Cannot attack while flying.",
+      "values": {
+        "Duration": 3,
+        "Speed": 250
+      },
+      "hotkey": "X",
+      "cooldown": 30,
+      "range": 1600
+    }
+  ],
+  "researchTime": 60,
+  "requires": [
+    "grell/building/synapse-canopy",
+    "grell/building/young-canopy"
+  ],
+  "exclusiveGroup": "Local.Grell.Lasher.Specialize3",
+  "appliesTo": [
+    "grell/unit/lasher"
+  ],
+  "portrait": "TGUI_icon_skill_movement_speed",
+  "asset": "Archetypes_ResearchItems/Multiplayer/Grell/Upgrades/RI_Grell_MP_Lasher_TakeFlight"
+}

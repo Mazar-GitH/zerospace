@@ -26,7 +26,7 @@
       "name": "Spawn Cultivator",
       "description": "Spawn Cultivator at target location.",
       "hotkey": "T",
-      "cooldown": 75
+      "cooldown": 60
     }
   ],
   "producedBy": [

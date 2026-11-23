@@ -15,20 +15,20 @@
   "supply": 2,
   "hp": 110,
   "armorType": "light",
-  "speed": 600,
+  "speed": 625,
   "vision": 1800,
   "size": 78.5,
   "weapons": [
     {
       "name": "Acidic Spines",
-      "damage": 11,
-      "cooldown": 1.2,
+      "damage": 12,
+      "cooldown": 1.4,
       "burst": 1,
-      "burstCooldown": 1.2,
+      "burstCooldown": 1.4,
       "range": 700,
       "warmup": 0.12,
       "projectileSpeed": 2500,
-      "dps": 9.1667
+      "dps": 8.5714
     }
   ],
   "producedBy": [
@@ -37,8 +37,8 @@
   "upgrades": [
     "grell/upgrade/camouflage",
     "grell/upgrade/caustic-spines",
-    "grell/upgrade/corrosive-secretion",
-    "grell/upgrade/sinuous-musculature"
+    "grell/upgrade/sinuous-musculature",
+    "grell/upgrade/take-flight"
   ],
   "topbarEnergyCosts": {
     "grell/topbar/infusion": 3.2813

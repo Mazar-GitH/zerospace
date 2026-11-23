@@ -8,16 +8,15 @@
     "rad": 50
   },
   "hotkey": "T",
-  "order": 3,
+  "order": 0,
   "cost": {
-    "flux": 125
+    "flux": 100
   },
-  "researchTime": 60,
+  "researchTime": 40,
   "requires": [
-    "grell/building/elderwomb",
     "grell/building/synapse-canopy"
   ],
-  "exclusiveGroup": "Local.Grell.Harbinger.Specialize2",
+  "exclusiveGroup": "Local.Grell.Harbinger.Specialize1",
   "appliesTo": [
     "grell/unit/harbinger"
   ],

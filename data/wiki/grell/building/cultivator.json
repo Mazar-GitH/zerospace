@@ -7,10 +7,10 @@
   "hotkey": "E",
   "order": 20,
   "cost": {
-    "hexite": 15
+    "hexite": 10
   },
   "buildTime": 8,
-  "hp": 150,
+  "hp": 100,
   "armorRating": 0,
   "upgradesTo": [
     {

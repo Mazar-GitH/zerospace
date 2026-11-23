@@ -1,6 +1,11 @@
 {
   "warnings": [
     {
+      "code": "section-not-found",
+      "gid": "1849458702687169",
+      "detail": "Hotfix - November 15th 2026"
+    },
+    {
       "code": "subject-unresolved",
       "gid": "1849192144184571",
       "faction": null,
@@ -210,12 +215,6 @@
       "faction": "the-legion",
       "subject": null,
       "detail": "Labourer move speed increased from 450 -> 500"
-    },
-    {
-      "code": "subject-unresolved",
-      "gid": "1840944183772520",
-      "faction": "endari",
-      "subject": "The Deep One"
     },
     {
       "code": "subject-unresolved",

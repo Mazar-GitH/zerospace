@@ -3,10 +3,11 @@
   "kind": "upgrade",
   "faction": "the-legion",
   "name": "Improved Charge",
-  "description": "+{range}% Charge range.\nCharge now has {num} cast charges.",
+  "description": "+{range}% Charge range.\nCharge grants +{armor} armor for {duration} seconds after Charge completes.",
   "values": {
     "range": 25,
-    "num": 2
+    "armor": 3,
+    "duration": 3
   },
   "order": 0,
   "cost": {

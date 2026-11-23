@@ -72,10 +72,8 @@
     "grell/building/incubator"
   ],
   "upgrades": [
-    "grell/upgrade/cardiovascular-boost",
-    "grell/upgrade/coagulated-membrane",
     "grell/upgrade/hemal-vents",
-    "grell/upgrade/thermal-carapace"
+    "grell/upgrade/myogenic-tarsals"
   ],
   "topbarEnergyCosts": {
     "grell/topbar/infusion": 6.875

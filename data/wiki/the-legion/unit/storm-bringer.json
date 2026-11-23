@@ -34,14 +34,20 @@
   "abilities": [
     {
       "name": "Tempest",
-      "description": "Casts a storm at a target location, dealing {Damage} damage per second to enemies in the area.\nLasts for {x} seconds.",
+      "description": "Channels a growing storm at a target location, dealing {Damage} damage per second to enemies in the area.\nDrains {Energy} energy per second while channeling.",
       "values": {
         "Damage": 40,
-        "x": 5
+        "Energy": 4
       },
       "hotkey": "G",
-      "energyCost": 50,
+      "energyCost": 40,
       "range": 1400
+    },
+    {
+      "name": "End Storm",
+      "description": "Stop channeling storm",
+      "hotkey": "G",
+      "cooldown": 0.3
     }
   ],
   "producedBy": [
@@ -51,7 +57,8 @@
     "the-legion/building/terror-tower"
   ],
   "upgrades": [
-    "the-legion/upgrade/energy-siphon"
+    "the-legion/upgrade/energy-siphon",
+    "the-legion/upgrade/siege-tempest"
   ],
   "topbarEnergyCosts": {
     "the-legion/topbar/reanimate": 8.25

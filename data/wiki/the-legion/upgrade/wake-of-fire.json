@@ -3,11 +3,10 @@
   "kind": "upgrade",
   "faction": "the-legion",
   "name": "Wake of Fire",
-  "description": "Charge leaves behind a fire trail, dealing {dps} damage per second. Lasts {fireduration} seconds.\nCharge also grants +{armor} armor in addition to move speed after Charge completes.",
+  "description": "Charge leaves behind a fire trail, dealing {dps} damage per second. Lasts {fireduration} seconds.",
   "values": {
     "dps": 30,
-    "fireduration": 5,
-    "armor": 3
+    "fireduration": 5
   },
   "stats": [
     {

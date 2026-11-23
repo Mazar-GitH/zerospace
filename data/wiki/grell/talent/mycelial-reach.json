@@ -3,11 +3,11 @@
   "kind": "talent",
   "faction": "grell",
   "name": "Mycelial Reach",
-  "description": "{gatherer} {spawncultivator} cooldown -{cooldownreduction} seconds.\n{gatherer} {spawncultivator} cast range +{castrangebuff}%.",
+  "description": "{gatherer} {spawncultivator} cooldown -{cooldownreduction} seconds.\n{gatherer} {spawncultivator} cast range +{castrangebuff}%.\n{gatherer}s now generates Biomass.",
   "values": {
     "gatherer": "Gatherer",
     "spawncultivator": "Spawn Cultivator",
-    "cooldownreduction": 45,
+    "cooldownreduction": 30,
     "castrangebuff": 250
   },
   "researchTime": 20,

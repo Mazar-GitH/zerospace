@@ -523,7 +523,9 @@
       "entries": [
         {
           "subject": "The Deep One",
-          "entityIds": [],
+          "entityIds": [
+            "endari/building/silent-hollow"
+          ],
           "lines": [
             {
               "text": "Cost changed from 100/25 -> 125/0"

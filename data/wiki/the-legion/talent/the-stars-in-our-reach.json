@@ -6,12 +6,12 @@
   "description": "Further gained XP is converted into top bar power.",
   "details": "{percent} XP gained as Power.",
   "values": {
-    "percent": 10
+    "percent": 5
   },
   "stats": [
     {
       "label": "Energy per 100 XP",
-      "value": 10
+      "value": 5
     }
   ],
   "researchTime": 20,

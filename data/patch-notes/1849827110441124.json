@@ -1,0 +1,311 @@
+{
+  "id": "1849827110441124",
+  "label": "Update #20",
+  "title": "Update #20: Versus Balance and Bug Fixes",
+  "date": "2026-11-23",
+  "url": "https://store.steampowered.com/news/app/1605850/view/1849827110441124",
+  "sections": [
+    {
+      "faction": "grell",
+      "heading": "Grell",
+      "entries": [
+        {
+          "subject": "Lasher",
+          "entityIds": [
+            "grell/unit/lasher"
+          ],
+          "lines": [
+            {
+              "text": "Damage 11 to 12"
+            },
+            {
+              "text": "Attack cooldown 1.2s to 1.4s"
+            },
+            {
+              "text": "Attacks now apply a stacking 1 damage per second for 5 seconds"
+            },
+            {
+              "text": "Move speed 600 to 625"
+            },
+            {
+              "text": "The +damage to medium upgrade is replaced with Take Flight: Lashers fly for 3 seconds with +250 move speed and cannot attack while flying"
+            }
+          ]
+        },
+        {
+          "subject": "Weaver",
+          "entityIds": [
+            "grell/unit/weaver"
+          ],
+          "lines": [
+            {
+              "text": "Cost 100/200 to 100/150"
+            },
+            {
+              "text": "Acid Blight no longer has a cast or channel time"
+            }
+          ]
+        },
+        {
+          "subject": "Harvester and Cultivator",
+          "entityIds": [
+            "grell/unit/gatherer",
+            "grell/building/cultivator"
+          ],
+          "lines": [
+            {
+              "text": "Cultivator cost 15 to 10"
+            },
+            {
+              "text": "Cultivator health 150 to 100"
+            },
+            {
+              "text": "Spawn Cultivator cooldown 75s to 60s, and its cool up time is removed"
+            },
+            {
+              "text": "Cultivators can only be spawned on biomass"
+            },
+            {
+              "text": "Biomass regeneration 1 to 2 health per second"
+            },
+            {
+              "text": "Mycelial Reach now makes Harvesters generate biomass"
+            },
+            {
+              "text": "Mycelial Reach cooldown reduction 45s to 30s"
+            }
+          ]
+        },
+        {
+          "subject": "Thresher",
+          "entityIds": [
+            "grell/unit/thresher"
+          ],
+          "lines": [
+            {
+              "text": "Cost 100/200 to 100/175"
+            }
+          ]
+        },
+        {
+          "subject": "Nourishing Pod",
+          "entityIds": [
+            "grell/building/nourishing-pod"
+          ],
+          "lines": [
+            {
+              "text": "Heal per energy 4 to 3"
+            },
+            {
+              "text": "Max energy used per heal 4 to 10"
+            }
+          ]
+        },
+        {
+          "subject": "Harbinger",
+          "entityIds": [
+            "grell/unit/harbinger"
+          ],
+          "lines": [
+            {
+              "text": "Thermal Carapace, Cardiovascular Boost and Coagulated Membrane removed"
+            },
+            {
+              "text": "Hemal Vents moved to Tier 1, cost 125 to 100 flux, research time 60s to 40s"
+            },
+            {
+              "text": "New Tier 1 upgrade Myogenic Tarsals: +175 move speed and +1 armor"
+            },
+            {
+              "text": "The Eruption talent no longer requires the Elderwomb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "faction": "the-xol",
+      "heading": "Xol",
+      "entries": [
+        {
+          "subject": "Paradox",
+          "entityIds": [
+            "the-xol/unit/paradox"
+          ],
+          "lines": [
+            {
+              "text": "Damage 50 to 25"
+            },
+            {
+              "text": "Area damage 100% to 50%"
+            },
+            {
+              "text": "Projectile homing speed +60%"
+            },
+            {
+              "text": "Projectile duration 5s to 6s"
+            },
+            {
+              "text": "Time Bend now shows a visual at the cast spot until the units return"
+            }
+          ]
+        },
+        {
+          "subject": "Eradicator",
+          "entityIds": [
+            "the-xol/unit/eradicator"
+          ],
+          "lines": [
+            {
+              "text": "Can no longer attack ground"
+            }
+          ]
+        },
+        {
+          "subject": "Overclocked Production",
+          "entityIds": [
+            "the-xol/talent/overclocked-production"
+          ],
+          "lines": [
+            {
+              "text": "+25% charge rate and +1 maximum charge changed to +1 current and maximum charge"
+            }
+          ]
+        },
+        {
+          "subject": "Anrubic",
+          "entityIds": [
+            "the-xol/hero/anrubic"
+          ],
+          "lines": [
+            {
+              "text": "Blink now moves only Anrubic instead of nearby units too"
+            },
+            {
+              "text": "Launch Rollers damage 30 to 15, radius 2 to 1.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "faction": "the-legion",
+      "heading": "Legion",
+      "entries": [
+        {
+          "subject": "Storm Bringer",
+          "entityIds": [
+            "the-legion/unit/storm-bringer"
+          ],
+          "lines": [
+            {
+              "text": "Tempest is now channeled and lasts until canceled or out of energy"
+            },
+            {
+              "text": "Tempest starts smaller and grows larger over 2.5 seconds"
+            },
+            {
+              "text": "New upgrade: Tempest deals +50% damage to buildings"
+            }
+          ]
+        },
+        {
+          "subject": "Inquisitress",
+          "entityIds": [
+            "the-legion/hero/inquisitress"
+          ],
+          "lines": [
+            {
+              "text": "Improved Charge now gives 3 armor for 3 seconds after charging instead of an extra charge"
+            },
+            {
+              "text": "Wake of Fire no longer gives 3 armor for 5 seconds after charging"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "faction": "endari",
+      "heading": "Endari",
+      "entries": [
+        {
+          "subject": "The Deep One",
+          "entityIds": [
+            "endari/building/silent-hollow"
+          ],
+          "lines": [
+            {
+              "text": "Cost 125/0 to 100/25"
+            }
+          ]
+        },
+        {
+          "subject": "Shade",
+          "entityIds": [
+            "endari/unit/endari-shade"
+          ],
+          "lines": [
+            {
+              "text": "Range 1.6 to 1"
+            },
+            {
+              "text": "Damage 20 to 22"
+            },
+            {
+              "text": "Move speed 700 to 725"
+            }
+          ]
+        },
+        {
+          "subject": "Needler",
+          "entityIds": [
+            "endari/unit/endari-needler"
+          ],
+          "lines": [
+            {
+              "text": "Damage 10 to 12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "faction": null,
+      "heading": "Mercenaries",
+      "entries": [
+        {
+          "subject": "Marran Bulwark",
+          "entityIds": [
+            "marran/building/marran-bulwark"
+          ],
+          "lines": [
+            {
+              "text": "Marran Bulwark cost 125/0 to 100/25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "faction": "protectorate",
+      "heading": "Protectorate",
+      "entries": [
+        {
+          "subject": "The Stars in Our Reach",
+          "entityIds": [
+            "grell/talent/the-stars-in-our-reach",
+            "protectorate/talent/the-stars-in-our-reach",
+            "the-legion/talent/the-stars-in-our-reach",
+            "the-xol/talent/the-stars-in-our-reach"
+          ],
+          "lines": [
+            {
+              "text": "The Stars in Our Reach power gain 10% to 5%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -38,7 +38,7 @@
   "abilities": [
     {
       "name": "Jump",
-      "description": "Jump to a location and deal {x} damage in area\nTargets are slowed by {slow}% for {slowduration} seconds",
+      "description": "Jump to a location and deal {x} damage in area.\nTargets are slowed by {slow}% for {slowduration} seconds.",
       "values": {
         "x": 50,
         "slow": 50,

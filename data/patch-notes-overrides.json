@@ -19,6 +19,8 @@
     "*|mera": ["grell/hero/mera", "protectorate/hero/mera"],
     "*|marv": ["grell/hero/marv", "protectorate/hero/marv"],
     "grell|harvester": ["grell/unit/gatherer"],
+    "grell|harvester and cultivator": ["grell/unit/gatherer", "grell/building/cultivator"],
+    "endari|the deep one": ["endari/building/silent-hollow"],
     "the-xol|harvester": ["the-xol/unit/xol-harvester"],
     "protectorate|scouting drone": ["protectorate/unit/recon-drone"],
     "protectorate|shield": ["protectorate/topbar/protective-shield"]
@@ -27,10 +29,46 @@
     "1845383656388459": {
       "start": "[img src=\"{STEAM_CLAN_IMAGE}/44535122/99c909ff71f2bfe0500eb20121ac301374edb2b1.jpg\"][/img]",
       "end": "[h2]Misc/Bug Fixes[/h2]"
+    },
+    "1849827110441124": {
+      "start": "[h3]Grell[/h3]",
+      "end": "[/expand]"
     }
   },
-  "ignore": {},
+  "ignore": {
+    "1849827110441124": [
+      "Overclocked Production: +25% charge rate and +1 maximum charge changed to +1 current and maximum charge",
+      "Launch Rollers damage 30 to 15, radius 2 to 1.5",
+      "Blink now moves only Anrubic instead of nearby units too",
+      "The Stars in Our Reach power gain 10% to 5%"
+    ]
+  },
   "include": {
+    "1849827110441124": [
+      {
+        "faction": "the-xol",
+        "subject": "Overclocked Production",
+        "entityIds": ["the-xol/talent/overclocked-production"],
+        "lines": ["+25% charge rate and +1 maximum charge changed to +1 current and maximum charge"]
+      },
+      {
+        "faction": "the-xol",
+        "subject": "Anrubic",
+        "entityIds": ["the-xol/hero/anrubic"],
+        "lines": ["Blink now moves only Anrubic instead of nearby units too", "Launch Rollers damage 30 to 15, radius 2 to 1.5"]
+      },
+      {
+        "faction": "protectorate",
+        "subject": "The Stars in Our Reach",
+        "entityIds": [
+          "grell/talent/the-stars-in-our-reach",
+          "protectorate/talent/the-stars-in-our-reach",
+          "the-legion/talent/the-stars-in-our-reach",
+          "the-xol/talent/the-stars-in-our-reach"
+        ],
+        "lines": ["The Stars in Our Reach power gain 10% to 5%"]
+      }
+    ],
     "1849192144184571": [
       {
         "faction": null,

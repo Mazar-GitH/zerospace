@@ -1,0 +1,24 @@
+{
+  "id": "the-legion/upgrade/siege-tempest",
+  "kind": "upgrade",
+  "faction": "the-legion",
+  "name": "Siege Tempest",
+  "description": "Tempest deals +{damage}% damage to buildings.",
+  "values": {
+    "damage": 50
+  },
+  "order": 1,
+  "cost": {
+    "flux": 125
+  },
+  "researchTime": 50,
+  "requires": [
+    "the-legion/building/citadel"
+  ],
+  "exclusiveGroup": "Local.Legion.Infantry.StormBringer.Spec1",
+  "appliesTo": [
+    "the-legion/unit/storm-bringer"
+  ],
+  "portrait": "TGUI_icon_skill_marran_unit_energy_regeneration",
+  "asset": "Archetypes_ResearchItems/Multiplayer/Legion/Upgrades/Stormbringer/RI_Legion_MP_Stormbringer_BuildingUpgrade"
+}

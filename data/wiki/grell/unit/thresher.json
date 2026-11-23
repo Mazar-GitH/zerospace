@@ -8,7 +8,7 @@
   "order": 32,
   "cost": {
     "hexite": 100,
-    "flux": 200
+    "flux": 175
   },
   "count": 1,
   "buildTime": 50,
@@ -67,7 +67,7 @@
     "grell/upgrade/corroding-expulsion"
   ],
   "topbarEnergyCosts": {
-    "grell/topbar/infusion": 17.5
+    "grell/topbar/infusion": 15.9375
   },
   "portrait": "TGUI_portrait_unit_grell_thresher07",
   "asset": "Archetypes_ResearchItems/Troops/RI_Troop_Grell_Thresher"

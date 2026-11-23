@@ -22,9 +22,7 @@
     "grell/building/synapse-canopy"
   ],
   "unlocks": [
-    "grell/upgrade/accelerated-mitosis",
-    "grell/upgrade/coagulated-membrane",
-    "grell/upgrade/hemal-vents"
+    "grell/upgrade/accelerated-mitosis"
   ],
   "topbarEnergyCosts": {
     "grell/topbar/infusion": 15.3125

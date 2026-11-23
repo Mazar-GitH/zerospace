@@ -40,7 +40,8 @@
   "abilities": [
     {
       "name": "Launch Rollers",
-      "description": "Grab and throw up to {n} Rollers, dealing {damage} (+{buildingmul}% vs Buildings) damage for each Roller and slowing enemies by {slow}% for {slowdur} seconds.\nRollers are overclocked upon landing for {overclockdur}s.",
+      "description": "Grab and throw up to {n} Rollers, dealing {damage} (+{buildingmul}% vs Buildings) damage for each Roller and slowing enemies by {slow}% for {slowdur} seconds.",
+      "details": "Rollers are overclocked upon landing for {overclockdur}s.",
       "values": {
         "n": 15,
         "damage": 15,

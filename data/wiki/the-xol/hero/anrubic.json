@@ -103,10 +103,12 @@
         {
           "name": "Throw Rollers",
           "description": "Throw a nearby Roller to the target location\nDeals {damage} damage and slows targets by {slow}% for {slowduration} seconds",
+          "details": "Rollers are overclocked upon landing for {overclockdur}s.",
           "values": {
-            "damage": 30,
+            "damage": 15,
             "slow": 50,
-            "slowduration": 2
+            "slowduration": 2,
+            "overclockdur": 5
           },
           "hotkey": "E",
           "cooldown": 6,
@@ -139,14 +141,11 @@
       ],
       "abilities": [
         {
-          "name": "Blink",
-          "description": "Instantly teleports the Xol Hero and nearby allied units to a nearby location",
-          "hotkey": "E",
-          "cooldown": 24,
-          "range": 1600,
-          "targets": [
-            "Unit"
-          ]
+          "name": "Disassimilate",
+          "description": "Quickly moves to a target point, becoming invulnerable while moving.",
+          "hotkey": "D",
+          "cooldown": 12,
+          "range": 1500
         }
       ],
       "weapons": [
