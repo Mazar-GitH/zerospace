@@ -97,12 +97,12 @@ describe('Side catalogs: Grell research locations (deduced from the data, Kieirr
 
   it.each([
     ['camouflage', 'young-canopy'],
-    ['corrosive-secretion', 'young-canopy'],
     ['dissolving-venom', 'young-canopy'],
     ['endorphic-frenzy', 'young-canopy'],
     ['pouncing-reflex', 'young-canopy'],
+    ['take-flight', 'young-canopy'],
     ['accelerated-mitosis', 'synapse-canopy'],
-    ['coagulated-membrane', 'synapse-canopy'],
+    ['myogenic-tarsals', 'synapse-canopy'],
     ['hemal-vents', 'synapse-canopy'],
   ])('should research %s in the %s', (slug, building) => {
     const research = researches.find(({ id }) => id === `grell/upgrade/${slug}`);

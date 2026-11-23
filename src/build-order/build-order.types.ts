@@ -129,7 +129,7 @@ export type MiscEffect =
 export interface ProductionChargesBoost {
   entityIds: string[];
   maxDelta: number;
-  rechargeMultiplier: number;
+  currentDelta: number;
 }
 
 // faction-unit: a 'unit' order finished on an instance of a faction building (Unending Army, Kieirra 2026-11-20).

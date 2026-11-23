@@ -5,7 +5,8 @@ import type { Build } from '../build-order.types.ts';
 import type { ResolvedGameValues } from '../game-data/game-data.helpers.ts';
 import type { SimulationContext } from './engine.types.ts';
 
-// Mercenary stacks read from the real data (`productionCharges`, Steam build 26626645).
+// Mercenary stacks read from the real data (`productionCharges`, Steam build 26626645). The Bulwark costs 25 Flux
+// (Steam build 26864440) and the base mines none: the starting Flux pays it.
 const BULWARK = 'marran/building/marran-bulwark';
 const SKIMMER = 'marran/unit/marran-pulse-skimmer';
 
@@ -17,7 +18,7 @@ const withValues = (build: Build, values: Partial<ResolvedGameValues>): Simulati
 describe('Mercenaries: stacks of the data (1 at completion, 4 max, +1 every 90 s)', () => {
   const build = toBuild('protectorate', 'marran', [[BULWARK, 0]], [SKIMMER, SKIMMER, SKIMMER]);
   // More recruits than the starting 15 supply holds: the supply is left unchecked to test the stacks alone.
-  const result = simulateReal(build, withValues(build, { startingSupply: unknown(), startingHexite: known(5000) }));
+  const result = simulateReal(build, withValues(build, { startingSupply: unknown(), startingHexite: known(5000), startingFlux: known(25) }));
   const recruits = result.orders.filter(({ entityId }) => entityId === SKIMMER);
   const lane = result.lanes.find(({ entityId }) => entityId === BULWARK);
 
@@ -67,7 +68,8 @@ describe('Mercenaries: one copy of each mercenary building', () => {
 
   // Over time: the copy clicked later is the one refused, whatever its place in `timed`.
   it('should refuse the later Marran Bulwark and ignore it', () => {
-    const result = simulateReal(toBuild('protectorate', 'marran', [[BULWARK, 30], [BULWARK, 10]], [SKIMMER]));
+    const build = toBuild('protectorate', 'marran', [[BULWARK, 30], [BULWARK, 10]], [SKIMMER]);
+    const result = simulateReal(build, withValues(build, { startingFlux: known(25) }));
     const late = result.steps.find(({ stepUid }) => stepUid === 'b1');
 
     expect(hasOrder(result, { uid: 'b1' })).toBe(false);

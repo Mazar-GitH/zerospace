@@ -66,7 +66,7 @@ const resolveEffects = (sources: MiscEffectSource[], values: DescriptionValues, 
           kind: source.kind,
           entityIds: source.entityIds,
           maxDelta: read(source.maxDelta),
-          rechargeMultiplier: toMultiplier(source.recharge, read),
+          currentDelta: read(source.currentDelta),
         };
       default:
         return source;

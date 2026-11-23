@@ -40,7 +40,7 @@ describe('Xol production charges', () => {
     expect(startsOf(build, ROLLER).map(([start]) => start)).toEqual([at, at, at, at, at + 35]);
   });
 
-  it('should give Overclocked Production to the producers completed after it only: 5 charges, 28 s (CA6)', () => {
+  it('should give Overclocked Production to the producers completed after it only: 5 charges, 2 at completion (CA6)', () => {
     // Gyroforge A ready 0:55, the talent at 1:00, Gyroforge B ready 1:30.
     const rollers = (producerUid: string) => Array.from({ length: 3 }, () => ({ entityId: ROLLER, producerUid }));
     const build = toXolBuild([[POWER_CORE, 0], [GYROFORGE, 5], [GYROFORGE, 40], [OVERCLOCKED, 60]], [...rollers('b2'), ...rollers('b3')]);
@@ -50,7 +50,7 @@ describe('Xol production charges', () => {
     expect(laneOf('b2')?.stacks?.max).toBe(4);
     expect(laneOf('b3')?.stacks?.max).toBe(5);
     expect(startsOf(build, ROLLER, 'lane:b2').map(([start]) => start)).toEqual([55, 90, 125]);
-    expect(startsOf(build, ROLLER, 'lane:b3').map(([start]) => start)).toEqual([90, 118, 146]);
+    expect(startsOf(build, ROLLER, 'lane:b3').map(([start]) => start)).toEqual([90, 90, 125]);
   });
 
   it('should loop a Roller at each charge until the last step outside the loop is done', () => {

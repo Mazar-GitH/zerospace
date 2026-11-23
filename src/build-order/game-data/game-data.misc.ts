@@ -25,7 +25,7 @@ export type MiscEffectSource =
   | { kind: 'spawn-units'; entityId: string; count: Amount; waitsForSupply: boolean }
   | { kind: 'spawn-on-finish'; entityId: string; trigger: SpawnTrigger }
   | { kind: 'building-copies'; entityId: string; copies: Amount }
-  | { kind: 'production-charges'; entityIds: string[]; maxDelta: Amount; recharge: MultiplierOf };
+  | { kind: 'production-charges'; entityIds: string[]; maxDelta: Amount; currentDelta: Amount };
 
 export interface MiscSource {
   effects: MiscEffectSource[];
@@ -142,14 +142,14 @@ export const MISC_TALENTS: Record<string, MiscSource> = {
       {
         kind: 'production-charges',
         entityIds: XOL_PRODUCERS,
-        maxDelta: { key: 'charges' },
-        recharge: { speedPercent: { key: 'rate' } },
+        maxDelta: { key: 'num' },
+        currentDelta: { key: 'num' },
       },
     ],
-    lines: ['+{charges} max production charges', '+{rate}% charge recharge speed'],
+    lines: ['+{num} max production charges', '+{num} production charges'],
     status: 'confirmed',
     owner: 'Kieirra',
-    note: 'Kieirra 2026-11-20: producers completed after the talent only.',
+    note: 'Kieirra 2026-11-20: producers completed after the talent only. Build 26864440: + Charge Bonus to the max and current charges, recharge unchanged (RI_Talent_Xol_MP_ProductionChargeUpgrade_B).',
   },
   'the-xol/talent/improved-systems': {
     effects: [{ kind: 'duration', target: { categories: ['merge'] }, multiplier: { reductionPercent: { key: 'merge_time' } } }],

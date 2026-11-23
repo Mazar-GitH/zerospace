@@ -92,12 +92,11 @@ export const RESEARCH_LOCATIONS: Record<string, string> = {
   // Grell, deduced from the data on 2026-11-19, to be confirmed by Kieirra: where the other upgrades of the same unit are
   // researched (Lasher, Stinger, Mandragora in the Young Canopy; Keeper, Harbinger in the Synapse Canopy).
   'grell/upgrade/camouflage': 'grell/building/young-canopy',
-  'grell/upgrade/corrosive-secretion': 'grell/building/young-canopy',
   'grell/upgrade/dissolving-venom': 'grell/building/young-canopy',
   'grell/upgrade/endorphic-frenzy': 'grell/building/young-canopy',
   'grell/upgrade/pouncing-reflex': 'grell/building/young-canopy',
+  'grell/upgrade/take-flight': 'grell/building/young-canopy',
   'grell/upgrade/accelerated-mitosis': 'grell/building/synapse-canopy',
-  'grell/upgrade/coagulated-membrane': 'grell/building/synapse-canopy',
   'grell/upgrade/hemal-vents': 'grell/building/synapse-canopy',
 };
 

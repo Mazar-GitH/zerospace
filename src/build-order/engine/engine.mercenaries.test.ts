@@ -15,10 +15,13 @@ const COMMANDO = 'protectorate/unit/commando';
 // Bulwark at 0:00 (ready at 0:50), recruits 'u1', 'u2'…
 const marranBuild = (recruits: number) => toBuild('protectorate', 'marran', [[BULWARK, 0]], Array<string>(recruits).fill(SKIMMER));
 
+// The Bulwark costs 25 Flux (Steam build 26864440) and the base mines none: the starting Flux pays it, nothing more.
 const withValues = (build: Build, values: Partial<ResolvedGameValues>): SimulationContext => {
   const context = toRealContext(build);
-  return { ...context, values: { ...context.values, ...values } };
+  return { ...context, values: { ...context.values, startingFlux: known(25), ...values } };
 };
+
+const simulateMarran = (build: Build) => simulateReal(build, withValues(build, {}));
 
 // Bulwark without data stacks (before Steam build 26626645) and supply unchecked: the stack game values alone apply.
 const simulateFallback = (build: Build, values: Partial<ResolvedGameValues> = {}) => {
@@ -91,7 +94,7 @@ describe('Mercenaries: known stack rule (CA6)', () => {
 describe('Mercenaries: recruits never hold the others', () => {
   // No harvester: the Flux of the Sharpshooter never comes, the Supply Platform still starts at its click time.
   it('should start a later building while a recruit waits for its resources', () => {
-    const result = simulateReal(toBuild('protectorate', 'marran', [[BULWARK, 0], [SUPPLY_PLATFORM, 60]], [SHARPSHOOTER]));
+    const result = simulateMarran(toBuild('protectorate', 'marran', [[BULWARK, 0], [SUPPLY_PLATFORM, 60]], [SHARPSHOOTER]));
     const platform = result.orders.find(({ stepUid }) => stepUid === 'b2');
 
     expect(platform).toMatchObject({ clickAt: 60, startAt: 60, waits: {} });
@@ -100,7 +103,7 @@ describe('Mercenaries: recruits never hold the others', () => {
 
   it('should recruit on its own building, never held behind the units of the Barracks', () => {
     const commandos = Array<string>(8).fill(COMMANDO);
-    const result = simulateReal(
+    const result = simulateMarran(
       toBuild('protectorate', 'marran', [[SUPPLY_PLATFORM, 0], [BARRACKS, 15], [SUPPLY_PLATFORM, 30], [BULWARK, 60]], [...commandos, SKIMMER, SKIMMER]),
     );
     const lane = bulwarkLane(result);
@@ -113,7 +116,7 @@ describe('Mercenaries: recruits never hold the others', () => {
 
   it('should not recruit before its click time (CA14)', () => {
     const build = marranBuild(1);
-    const result = simulateReal({ ...build, queued: [{ ...build.queued[0], at: 120 }] });
+    const result = simulateMarran({ ...build, queued: [{ ...build.queued[0], at: 120 }] });
 
     expect(recruitsOf(result)[0]).toMatchObject({ clickAt: 120, startAt: 120 });
   });

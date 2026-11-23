@@ -6,7 +6,7 @@ import type { InstanceState, Modifiers, OrderState, SimulationState, StackState 
 import type { SimulationContext, StackGauge } from './engine.types.ts';
 
 // Stacks of a mercenary building or charges of a Xol producer (US-009), received when it is ready: the charges of the
-// data, else the game values; raised by the boosts in force (Overclocked Production).
+// data, else the game values; the boosts in force raise the max and the charges received (Overclocked Production).
 export const createStacks = (
   values: ResolvedGameValues,
   readyTick: number,
@@ -15,9 +15,9 @@ export const createStacks = (
 ): StackState => {
   const max = boosts.reduce((total, { maxDelta }) => total + maxDelta, charges?.max ?? values.mercenaryMaxStacks.value ?? 0);
   const baseRecharge = charges?.recharge ?? values.mercenaryStackRechargeSeconds.value;
-  const recharge = baseRecharge === null ? null : boosts.reduce((seconds, { rechargeMultiplier }) => seconds * rechargeMultiplier, baseRecharge);
-  const rechargeTicks = recharge === null ? null : toTicks(recharge);
-  const count = Math.min(charges?.initial ?? values.mercenaryInitialStacks.value ?? max, max);
+  const rechargeTicks = baseRecharge === null ? null : toTicks(baseRecharge);
+  const initial = charges?.initial ?? values.mercenaryInitialStacks.value ?? max;
+  const count = Math.min(boosts.reduce((total, { currentDelta }) => total + currentDelta, initial), max);
   return {
     count,
     max,
