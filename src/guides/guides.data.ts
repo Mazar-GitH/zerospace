@@ -14,6 +14,7 @@ import {
   resolveTalents,
   toMatchupTags,
   toReadingMinutes,
+  toYoutubeId,
 } from './guides.helpers.ts';
 import { toTheorycraft } from './theorycraft-link/theorycraft-link.data.ts';
 import type { Guide, ResolvedBuildOrder } from './guides.types.ts';
@@ -103,6 +104,7 @@ const toGuide = (entry: GuideEntry, context: GuideContext): Guide => {
     matchupTags: faction && vs ? toMatchupTags(faction.id, Object.keys(vs)) : [],
     strengths: data.strengths ?? [],
     weaknesses: data.weaknesses ?? [],
+    youtubeId: data.video === undefined ? undefined : toYoutubeId(data.video),
     mainBuildOrder:
       main && faction
         ? withTheorycraft(main, entry.id, context, {

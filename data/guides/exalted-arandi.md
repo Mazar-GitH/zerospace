@@ -17,6 +17,7 @@ strengths:
 weaknesses:
   - Weak against Skrells.
   - Weak against Marran Badgers and Halo Tanks.
+video: https://www.youtube.com/watch?v=gGL-gPqhu4I
 ---
 
 ```bo

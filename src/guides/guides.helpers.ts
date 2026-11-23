@@ -18,6 +18,8 @@ const WORDS_PER_MINUTE = 220;
 const MERCENARY_TALENT_LEVELS = new Set([2, 4, 6]);
 // Fields that need the faction: checked when faction is absent.
 const FACTION_SCOPED_FIELDS = ['mercenary', 'hero', 'talents', 'army'] as const;
+// youtube.com/watch?v=<id>, youtu.be/<id> or youtube.com/embed/<id>, with or without extra parameters.
+const YOUTUBE_URL_PATTERN = /^https:\/\/(?:www\.)?(?:youtube\.com\/(?:watch\?(?:[^#]*&)?v=|embed\/)|youtu\.be\/)([\w-]{11})(?:[?&#]|$)/;
 
 export const getPatchStatus = (patch: number, latest: number): PatchStatus => {
   const gap = latest - patch;
@@ -107,4 +109,10 @@ const levenshtein = (a: string, b: string) => {
     previous = current;
   }
   return previous[b.length];
+};
+
+export const toYoutubeId = (url: string) => {
+  const id = YOUTUBE_URL_PATTERN.exec(url)?.[1];
+  if (!id) throw new Error(`video: "${url}" is not a YouTube video link.`);
+  return id;
 };

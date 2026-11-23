@@ -10,6 +10,7 @@ import {
   toGuideTags,
   toMatchupTags,
   toReadingMinutes,
+  toYoutubeId,
 } from './guides.helpers.ts';
 
 const talent = (name: string, faction: string, level: number, position: string): Entity => ({
@@ -195,5 +196,22 @@ describe('Reading time', () => {
 
   it('reads a short guide in 1 minute', () => {
     expect(toReadingMinutes('## Title\n\nA few words.')).toBe(1);
+  });
+});
+
+describe('YouTube video', () => {
+  it.each([
+    'https://www.youtube.com/watch?v=gGL-gPqhu4I',
+    'https://www.youtube.com/watch?v=gGL-gPqhu4I&t=120s',
+    'https://youtu.be/gGL-gPqhu4I?si=U8JbqKSzYbvxYgjq',
+    'https://www.youtube.com/embed/gGL-gPqhu4I?si=U8JbqKSzYbvxYgjq',
+  ])('should read the video id of %s', (url) => {
+    expect(toYoutubeId(url)).toBe('gGL-gPqhu4I');
+  });
+
+  it('should fail when the link is not a YouTube video', () => {
+    expect(() => toYoutubeId('https://www.twitch.tv/videos/123')).toThrow(
+      'video: "https://www.twitch.tv/videos/123" is not a YouTube video link.',
+    );
   });
 });

@@ -67,6 +67,7 @@ Use the exact names of the wiki (`Legion Labourer`, not `harv`). Write `hexite`,
 | `vs` | no | rating from 1 to 5 per opponent, e.g. `{ grell: 4, the-xol: 2 }` |
 | `style` | no | `one-base`, `expand` or `all-in` |
 | `strengths`, `weaknesses` | no | short sentences |
+| `video` | no | YouTube link of a game played with the build, shown as a player under the build order |
 
 ## Talents
 

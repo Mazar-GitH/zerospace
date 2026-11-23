@@ -13,6 +13,7 @@ import GuideStart from './guide-start/guide-start.astro';
 import GuideStrengthsWeaknesses from './guide-strengths-weaknesses/guide-strengths-weaknesses.astro';
 import { collectPreviewEntities } from './guide-page.helpers.ts';
 import GuideToc from './guide-toc/guide-toc.astro';
+import GuideVideo from './guide-video/guide-video.astro';
 
 interface Props {
   guide: Guide;
@@ -45,6 +46,7 @@ const hasModules = hasStart || guide.army.length > 0 || guide.vs.length > 0 || h
   }
   <div class="flex min-w-0 flex-col gap-4">
     {guide.mainBuildOrder && <BuildOrder title={guide.title} factionId={guide.faction?.id} buildOrder={guide.mainBuildOrder} />}
+    {guide.youtubeId && <GuideVideo youtubeId={guide.youtubeId} title={guide.title} />}
     {
       html.trim() !== '' && (
         <div style={`--guide-accent: ${toGuideAccent(guide.faction)}`} class="bevel bg-panel/95 p-6">

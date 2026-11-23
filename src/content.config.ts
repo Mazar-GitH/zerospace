@@ -319,6 +319,7 @@ const guides = defineCollection({
     style: z.enum(['one-base', 'expand', 'all-in']).optional(),
     strengths: z.array(z.string()).min(1).max(6).optional(),
     weaknesses: z.array(z.string()).min(1).max(6).optional(),
+    video: z.string().optional(),
   }),
 });
 

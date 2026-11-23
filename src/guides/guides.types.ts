@@ -182,6 +182,8 @@ export interface Guide {
   matchupTags: string[];
   strengths: string[];
   weaknesses: string[];
+  // YouTube id of a video of the build.
+  youtubeId?: string;
   // Absent when the body does not start with a ```bo block: no build order panel.
   mainBuildOrder?: ResolvedBuildOrder;
   // Other ```bo blocks, rendered in the prose.
